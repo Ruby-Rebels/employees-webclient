@@ -1,0 +1,10 @@
+<h2>Here's the employee!</h2>
+
+<ul>
+  <li><%= @employee['first_name'] %></li>
+  <li><%= @employee['last_name'] %></li>
+  <li><%= @employee['birthdate'] %></li>
+</ul>
+
+
+<%= link_to 'Fire Employee', "/employees/#{@employee['id']}", method: 'delete' %>

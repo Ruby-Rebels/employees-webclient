@@ -1,0 +1,26 @@
+<h2>Edit the Employee!</h2>
+
+<%= form_tag("/employees/#{@employee['id']}", method: 'patch') do %>
+<div>
+  <%= label_tag(:first_name) %>
+  <%= text_field_tag(:first_name, @employee['first_name']) %>
+</div>
+<div>
+  <%= label_tag(:last_name) %>
+  <%= text_field_tag(:last_name, @employee['last_name']) %>
+</div>
+<div>
+  <%= label_tag(:email) %>
+  <%= text_field_tag(:email, @employee['email']) %>
+</div>
+<div>
+  <%= label_tag(:ssn) %>
+  <%= text_field_tag(:ssn, @employee['ssn']) %>
+</div>
+<div>
+  <%= label_tag(:birthdate) %>
+  <%= text_field_tag(:birthdate, @employee['birthdate']) %>
+</div>
+
+<%= submit_tag("Create Employee") %>
+<% end %>
