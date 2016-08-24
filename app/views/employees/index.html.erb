@@ -2,9 +2,9 @@
 
 <ul>
 <% @employees.each do |employee| %>
-  <li><%= employee['first_name'] %></li>
-  <li><%= employee['last_name'] %></li>
-  <li><%= employee['email'] %></li>
+  <li><%= employee.first_name %></li>
+  <li><%= employee.last_name %></li>
+  <li><%= employee.email %></li>
   <br>
 <% end %>
 </ul>
